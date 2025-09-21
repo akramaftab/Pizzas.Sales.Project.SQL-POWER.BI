@@ -13,27 +13,27 @@ The core objective is to deliver data-driven answers to crucial business questio
 ## Dataset Used
 
 The dataset comprises several interlinked tables representing real-life sales transactions, including:
-- ([Orders]()): ~21,350 orders with corresponding timestamps and order details.
-- ([Pizzas]()): Menu items with price, size, and pizza type associations.
-- ([PizzaTypes]()): Descriptors for each menu item, including name and category.
-- ([Order_Details](https://github.com/akramaftab/SQL-pizzas-sales-project/blob/main/order_details.csv)): Quantity breakdown and assignments to specific pizzas.
+- ([Orders](https://github.com/akramaftab/SQL-pizzas-sales-project/blob/main/orders.csv)): ~21,350 orders with corresponding timestamps and order details.
+- ([Pizzas](https://github.com/akramaftab/SQL-pizzas-sales-project/blob/main/pizzas.csv)): Menu items with price, size, and pizza type associations.
+- ([Pizza_types](https://github.com/akramaftab/SQL-pizzas-sales-project/blob/main/pizza_types.csv)): Descriptors for each menu item, including name and category.
+- ([Order_details](https://github.com/akramaftab/SQL-pizzas-sales-project/blob/main/order_details.csv)): Quantity breakdown and assignments to specific pizzas.
 These tables simulate a normalized sales database and enable granular analysis via SQL joins and aggregations.
 
 ## Key Questions (KPIs)
 
--Retrieve the total number of orders placed.
--Calculate the total revenue generated from pizza sales.
--Identify the highest-priced pizza.
--Identify the most common pizza size ordered.
--List the top 5 most ordered pizza types along with their quantities.
--Join the necessary tables to find the total quantity of each pizza category ordered.
--Determine the distribution of orders by hour of the day.
--Join relevant tables to find the category-wise distribution of pizzas.
--Group the orders by date and calculate the average number of pizzas ordered per day.
--Determine the top 3 most ordered pizza types based on revenue.
--Calculate the percentage contribution of each pizza type to total revenue.
--Analyze the cumulative revenue generated over time.
--Determine the top 3 most ordered pizza types based on revenue for each pizza category.
+- Retrieve the total number of orders placed.
+- Calculate the total revenue generated from pizza sales.
+- Identify the highest-priced pizza.
+- Identify the most common pizza size ordered.
+- List the top 5 most ordered pizza types along with their quantities.
+- Join the necessary tables to find the total quantity of each pizza category ordered.
+- Determine the distribution of orders by hour of the day.
+- Join relevant tables to find the category-wise distribution of pizzas.
+- Group the orders by date and calculate the average number of pizzas ordered per day.
+- Determine the top 3 most ordered pizza types based on revenue.
+- Calculate the percentage contribution of each pizza type to total revenue.
+- Analyze the cumulative revenue generated over time.
+- Determine the top 3 most ordered pizza types based on revenue for each pizza category.
 
 ## Process
 
@@ -81,8 +81,7 @@ The SQL Pizza Sales Analytics project delivers detailed, actionable insights int
 - SQL Aggregation & Analytic Functions
 - Result Table Exports for BI Visualization
 
+## Project
+([click to View project the project](https://github.com/akramaftab/SQL-pizzas-sales-project/blob/main/SQL%20PIZZA%20SALES%20PROJECT.pdf))
+
 ***
-
-This comprehensive description is designed for GitHub, LinkedIn, and data portfolio use, capturing both technical rigor and business context in the style requested.[1]
-
-[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/99293206/90c1e5da-e886-4327-9d61-2febd08192c0/SQL-PIZZA-SALES-PROJECT.pdf)
