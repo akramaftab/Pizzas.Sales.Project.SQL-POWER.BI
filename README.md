@@ -16,7 +16,7 @@ The dataset comprises several interlinked tables representing real-life sales tr
 - ([Orders]()): ~21,350 orders with corresponding timestamps and order details.
 - ([Pizzas]()): Menu items with price, size, and pizza type associations.
 - ([PizzaTypes]()): Descriptors for each menu item, including name and category.
-- ([OrderDetails]()): Quantity breakdown and assignments to specific pizzas.
+- ([Order_Details](https://github.com/akramaftab/SQL-pizzas-sales-project/blob/main/order_details.csv)): Quantity breakdown and assignments to specific pizzas.
 These tables simulate a normalized sales database and enable granular analysis via SQL joins and aggregations.
 
 ## Key Questions (KPIs)
