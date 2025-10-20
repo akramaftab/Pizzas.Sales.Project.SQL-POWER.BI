@@ -74,7 +74,7 @@ The Pizza Sales Analytics Dashboard turns point-of-sale data into clear answers 
 
 ## Explore More
 
-- 📥 [SQL Report (PDF)](https://github.com/yourrepo/SQL-pizza-sales-project.pdf)
+- 📥 [SQL Report (PDF)](https://github.com/akramaftab/Pizzas.Sales.Project.SQL-POWER.BI/blob/main/SQL%20PIZZA%20SALES%20PROJECT.pdf)
 ***
 - 📊 ![Dashboard screenshot 1](https://github.com/user-attachments/assets/00e87fac-08e0-420f-8fd4-567e792e10d5)
 - 📊 ![Dashboard Screenshot 2](https://github.com/user-attachments/assets/4a032205-2266-42f6-931d-87766a523923)
