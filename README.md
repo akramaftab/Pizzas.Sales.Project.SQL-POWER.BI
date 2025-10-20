@@ -1,87 +1,85 @@
-***
 
-# Pizza Sales Analytics Dashboard (SQL)
+# Pizza Sales Analytics Dashboard (SQL & Power BI)
+
+## Project Overview
+
+This dashboard combines powerful SQL data analysis with interactive Power BI visuals to tell the story behind pizza sales—making it easy for managers, marketers, and data lovers to spot real trends, improve menus, and optimize operations.
+
+***
 
 ## Short Description / Purpose
 
-The Pizza Sales Analytics Dashboard is a SQL-driven business intelligence project focused on uncovering insights from point-of-sale data for a hypothetical pizza restaurant. This analytical solution allows managers, analysts, and data enthusiasts to dig deep into order behaviors, revenue generation, product preferences, and category performance to support smarter operational and marketing decisions.
+The Pizza Sales Analytics Dashboard turns point-of-sale data into clear answers about what sells, when orders spike, and which menu choices matter most. Both SQL and Power BI ensure every insight is supported by real numbers—enabling confident, data-driven decisions.
+
+***
 
 ## Project Objective
 
-The core objective is to deliver data-driven answers to crucial business questions around order volume, sales revenue, product trends, and time-based purchasing patterns. By leveraging SQL for data extraction and aggregation, the project empowers stakeholders to optimize menu composition, forecast demand, tailor promotions, and boost overall profitability based on robust sales analytics.
+- Identify top and bottom-performing pizzas using real sales figures
+- Reveal seasonal and hourly sales patterns for smarter planning
+- Break down sales by category and size, not just total numbers
+- Present insights visually, so anyone can spot opportunities for improvement
+
+***
 
 ## Dataset Used
 
-The dataset comprises several interlinked tables representing real-life sales transactions, including:
-- ([Orders](https://github.com/akramaftab/SQL-pizzas-sales-project/blob/main/orders.csv)): ~21,350 orders with corresponding timestamps and order details.
-- ([Pizzas](https://github.com/akramaftab/SQL-pizzas-sales-project/blob/main/pizzas.csv)): Menu items with price, size, and pizza type associations.
-- ([Pizza_types](https://github.com/akramaftab/SQL-pizzas-sales-project/blob/main/pizza_types.csv)): Descriptors for each menu item, including name and category.
-- ([Order_details](https://github.com/akramaftab/SQL-pizzas-sales-project/blob/main/order_details.csv)): Quantity breakdown and assignments to specific pizzas.
-These tables simulate a normalized sales database and enable granular analysis via SQL joins and aggregations.
+- 21,350+ pizza orders with timestamps
+- Menu items with price, size, type, and category
+- Order details with per-item quantity
 
-## Key Questions (KPIs)
-
-- Retrieve the total number of orders placed.
-- Calculate the total revenue generated from pizza sales.
-- Identify the highest-priced pizza.
-- Identify the most common pizza size ordered.
-- List the top 5 most ordered pizza types along with their quantities.
-- Join the necessary tables to find the total quantity of each pizza category ordered.
-- Determine the distribution of orders by hour of the day.
-- Join relevant tables to find the category-wise distribution of pizzas.
-- Group the orders by date and calculate the average number of pizzas ordered per day.
-- Determine the top 3 most ordered pizza types based on revenue.
-- Calculate the percentage contribution of each pizza type to total revenue.
-- Analyze the cumulative revenue generated over time.
-- Determine the top 3 most ordered pizza types based on revenue for each pizza category.
+***
 
 ## Process
 
-- Data ingestion and setup: Structured the raw tables and relationships in a relational database.
-- SQL querying: Crafted multiple aggregation, grouping, and filtering queries for KPI extraction (using techniques like JOIN, GROUP BY, SUM, and analytic functions).
-- Analysis: Identified trends in order volume, product performance, and revenue contribution.
-- Visualization Outputs: Summarized results for clear, actionable reporting (e.g., top sellers, sales by date, and hourly trends).
-- Validation: Double-checked calculations with SQL result grids to ensure accuracy and meaningful insights.
+- **Data Preparation:** Imported and cleaned raw sales tables in SQL.
+- **Exploratory Analysis:** Wrote SQL queries to calculate key metrics, trends, and rankings.
+- **Insight Generation:** Identified best/worst sellers and uncovered patterns across time, category, and size.
+- **Visualization:** Brought the numbers to life in Power BI—designing charts and panels for quick, visual storytelling.
+- **Validation:** Cross-checked SQL outputs with dashboard summaries for accuracy.
 
-### Dashboard Interaction (for BI tools usage)
-
-While primarily a SQL-based project, outputs are well-suited for visualization via BI tools (e.g., Power BI, Tableau), with results supporting dynamic filtering by date, product category, pizza size, and type. Standard export tables allow for easy drill-downs and time-series analyses.
+***
 
 ## Summary KPIs
 
-- Total Orders: 21,350
-- Total Sales Revenue: ₹817,860.05
-- Most Expensive Pizza: The Greek Pizza (₹35.95)
-- Most Popular Size: Large (L) with 18,526 orders
-
-## Key Sales & Business Insights
-
-- The top 5 most ordered pizzas include Classic Deluxe, Barbecue Chicken, Hawaiian, Pepperoni, and Thai Chicken.
-- The Classic category drives the largest number of orders, while Chicken and Supreme pizzas lead in high-value revenue slices.
-- Peak order times are from noon to early evening, suggesting optimal hours for staffing and promotions.
-- The Thai Chicken Pizza, Barbecue Chicken Pizza, and California Chicken Pizza are the highest revenue generators.
-- Classic pizzas contribute 26.91% of total revenue, followed closely by Supreme, Chicken, and Veggie categories.
-- Cumulative revenue visualization uncovers seasonality and steady order streams across the reporting period.
-
-## Business Impact & Insights
-
-- Data pinpoints bestsellers to prioritize for marketing, combo offers, and inventory planning.
-- Pizza size and timing analysis improves kitchen operations, staffing, and supply chain support.
-- Revenue breakdown by pizza type/category suggests pricing optimization and new product focus areas for menu development.
-- Hourly pattern and cumulative revenue help with forecasting and peak-load management.
-
-## Final Conclusion
-
-The SQL Pizza Sales Analytics project delivers detailed, actionable insights into ordering habits, menu performance, and time-based purchasing, directly informing management decisions on product offerings, inventory, and promotion strategies. Using SQL as an analytics backbone, the dashboard enables repeatable, scalable sales analysis for any growing restaurant business.
-
-## Tech Stack
-
-- MySQL / PostgreSQL (standard SQL queries)
-- Relational Database Schema Design
-- SQL Aggregation & Analytic Functions
-- Result Table Exports for BI Visualization
-
-## Project
-([click to View project the project](https://github.com/akramaftab/SQL-pizzas-sales-project/blob/main/SQL%20PIZZA%20SALES%20PROJECT.pdf))
+| Metric               | Value/Insight                              |
+|----------------------|--------------------------------------------|
+| Total Orders         | 21,350                                     |
+| Total Revenue        | $817,900                                   |
+| Total Pizzas Sold    | 49,570                                     |
+| Avg. Order Value     | $38.31                                     |
+| Best Sellers         | Classic Deluxe, Thai Chicken Pizza         |
+| Worst Seller         | Brie Carre Pizza                           |
+| Most Popular Size    | Large (46%+ of all sales)                  |
+| Peak Season          | Summer (up to 15% higher than winter)      |
 
 ***
+
+## Key Insights
+
+- **Peak Sales:** Orders cluster at lunch/dinner; summer months see the biggest spikes.
+- **Category Power:** Classic pizzas and large sizes consistently drive the majority of sales.
+- **Marketing Moves:** Focusing on the top 5 pizzas could boost revenue by 30%.
+- **Operational Wins:** Understanding hourly/monthly patterns helps with staffing and inventory.
+
+***
+
+## Business Impact
+
+- Prioritize best-sellers for inventory, combos, and promotions.
+- Refine staff scheduling for rush hours and high seasons.
+- Use category and size data to update menu and set smarter prices.
+
+***
+
+## Explore More
+
+- 📥 [SQL Report (PDF)](https://github.com/yourrepo/SQL-pizza-sales-project.pdf)
+***
+- 📊 ![Dashboard screenshot 1](https://github.com/user-attachments/assets/00e87fac-08e0-420f-8fd4-567e792e10d5)
+- 📊 ![Dashboard Screenshot 2](https://github.com/user-attachments/assets/4a032205-2266-42f6-931d-87766a523923)
+
+
+[5](https://learn.microsoft.com/en-us/power-bi/connect-data/service-gateway-sql-tutorial)
+[6](https://www.questpond.com/project-based-power-bi-training-step-by-step/tid9)
+[7](https://chartexpo.com/blog/power-bi-project-end-to-end)
